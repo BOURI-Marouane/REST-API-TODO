@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Server4D" uuid="AB44C8CEDE8D6E44AAC778F8B4AADA1A" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Task" uuid="15B4B7F861BE8E4B9BE1C97AE14EE4EE" id="1">
+		<field name="ID" uuid="26F82FEE0F7DEF4A9E156EA396F726E0" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="task" uuid="D34A4C3DAFB0B749859E2C799E6A578A" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="staringDate" uuid="43D8B90DF4764D4B8B34DE41AFF5E817" type="8" never_null="true" id="3"/>
+		<field name="endingDate" uuid="DB49AF5D445D5A438A7CBF0929EB5EF9" type="8" never_null="true" id="4"/>
+		<field name="done" uuid="18B140064B763647AB6D81F1551DBF5D" type="1" never_null="true" id="5"/>
+		<field name="starting" uuid="4554E25ABD4DE742A8140C805865E1B1" type="1" never_null="true" id="6"/>
+		<primary_key field_name="ID" field_uuid="26F82FEE0F7DEF4A9E156EA396F726E0"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="153" blue="63" alpha="255"/>
+				<coordinates left="31" top="41" width="181" height="171.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="FA3BFA2F11181D4D849A888D87C0DDD3" type="1">
+		<field_ref uuid="26F82FEE0F7DEF4A9E156EA396F726E0" name="ID">
+			<table_ref uuid="15B4B7F861BE8E4B9BE1C97AE14EE4EE" name="Task"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0"/>
+</base>

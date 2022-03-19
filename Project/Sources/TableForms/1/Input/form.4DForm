@@ -1,0 +1,207 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"label_ID": {
+					"type": "text",
+					"text": "ID:",
+					"top": 10,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_ID": {
+					"type": "input",
+					"dataSource": "[Task:1]ID:1",
+					"top": 10,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_task": {
+					"type": "text",
+					"text": "task:",
+					"top": 47,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_task": {
+					"type": "input",
+					"dataSource": "[Task:1]task:2",
+					"top": 47,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"label_done": {
+					"type": "text",
+					"text": "done :",
+					"top": 179,
+					"left": 17,
+					"width": 53,
+					"height": 15
+				},
+				"label_starting": {
+					"type": "text",
+					"text": "starting :",
+					"top": 232,
+					"left": 17,
+					"width": 64,
+					"height": 15
+				},
+				"field_done": {
+					"type": "radio",
+					"text": "",
+					"top": 179,
+					"left": 120,
+					"width": 34,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "[Task:1]done:5",
+					"dataSourceTypeHint": "boolean",
+					"method": "ObjectMethods/field_done.4dm"
+				},
+				"field_starting": {
+					"type": "radio",
+					"text": "",
+					"top": 224,
+					"left": 120,
+					"width": 21,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "[Task:1]starting:6",
+					"dataSourceTypeHint": "boolean",
+					"method": "ObjectMethods/field_starting.4dm"
+				},
+				"label_staringDate": {
+					"type": "text",
+					"text": "staringDate :",
+					"top": 82,
+					"left": 5,
+					"width": 100,
+					"height": 17
+				},
+				"field_staringDate": {
+					"type": "input",
+					"dataSource": "[Task:1]staringDate:3",
+					"top": 84,
+					"left": 120,
+					"width": 250,
+					"height": 17,
+					"method": "ObjectMethods/field_staringDate.4dm",
+					"events": []
+				},
+				"label_endingDate": {
+					"type": "text",
+					"text": "endingDate :",
+					"top": 130,
+					"left": 5,
+					"width": 100,
+					"height": 17
+				},
+				"field_endingDate": {
+					"type": "input",
+					"dataSource": "[Task:1]endingDate:4",
+					"top": 130,
+					"left": 120,
+					"width": 250,
+					"height": 17,
+					"method": "ObjectMethods/field_endingDate.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"PopupDate": {
+					"type": "subform",
+					"top": 82,
+					"left": 390,
+					"width": 19,
+					"height": 16,
+					"dataSource": "vDate",
+					"dataSourceTypeHint": "date",
+					"detailForm": "DateButton",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/PopupDate.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"focusable": true
+				},
+				"PopupDate1": {
+					"type": "subform",
+					"top": 131,
+					"left": 390,
+					"width": 19,
+					"height": 16,
+					"dataSource": "vDate1",
+					"dataSourceTypeHint": "date",
+					"detailForm": "DateButton",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/PopupDate1.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"focusable": true
+				}
+			}
+		}
+	],
+	"geometryStamp": 18,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"Sources/Classes/Task.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 64,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2022-03-19T12:32:31.261Z"
+	},
+	"Sources/DatabaseMethods/onStartup.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2022-03-19T14:15:17.442Z"
+	},
+	"Trash/Methods/(weloome).4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2022-03-19T13:35:00.584Z"
+	}
+}
